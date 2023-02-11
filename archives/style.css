@@ -1,0 +1,157 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+*{
+  margin:0;
+  padding:0;
+  font-family:'Roboto';
+}
+
+.container{
+  height:100%;
+  width:100%;
+  display:flex;
+  flex-direction:row;
+  align-items:center;
+  background-color:white;
+}
+.left{
+  width:40%;
+  height:100%;
+  background: rgb(238,174,202);
+background: linear-gradient(0deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+  align-items:center;
+  border-radius:0px 20px 20px 0px;
+}
+.right{
+  width:60%;
+  height:100%;
+  background-color:white;
+  display:flex;
+  justify-content:space-around;
+  flex-direction:column;
+  align-items:center;
+}
+.card{
+  width:380px;
+  height:200px;
+  background-color:#d6d6d6;
+  border-radius:15px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  outline: 2px inset rgba(28,110,164,0.06);
+outline-offset: 7px;
+}
+.front{
+  display:grid;
+  grid-template-columns:auto;
+  grid-template-rows:auto;
+  gap:20px;
+  background: rgb(63,94,251);
+background: linear-gradient(90deg, rgba(63,94,251,1) 29%, rgba(246,71,111,1) 68%);
+}
+.logo_card{
+  grid-area:1/5/1/5;
+  padding:20px 20px;
+}
+.name_card{
+  grid-area:4/1/4/3;
+  padding:0px 20px;
+  font-size:21px;
+}
+.numbers_card{
+  grid-area:3/1/3/4;
+  padding:0px 20px;
+  font-size:22px;
+}
+.expiring_card{
+  grid-area:4/5/4/5;
+  padding:0px 20px;
+  font-size:17px;
+}
+.back{
+  display:grid;
+  grid-template-columns:10px auto auto auto 10px;
+  grid-template-rows:10px 40px 45px 50px;
+  gap:10px;
+}
+.sensor{
+  grid-area:2/1/2/6;
+  background-color:black ;
+}
+.validationcode_card{
+  grid-area:3/2/3/5;
+  background-color:#a2a0a0;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+  font-size:22px;
+  border-radius:5px;
+}
+.text{
+  grid-area:4/3/5/4;
+  margin:0px 70px;
+  text-align:center;
+  font-size:12px;
+}
+input {
+  display: block;
+}
+
+.buttonConfirm{
+  border-radius:5px;
+  background-color:#090981;
+  color:white;
+  width:300px;
+  height:40px;
+  outline:none;
+  font-size:22px;
+  box-shadow: 0 5px #999;
+  transition:background 0.7s,transform 0.1s,box-shadow 0.1s;
+  border:2px solid #090981;
+}
+.buttonConfirm:hover {background-color: #6670ff}
+
+.buttonConfirm:active {
+  background-color: #6670ff;
+  box-shadow: 0 2px #666;
+  transform: translateY(3px);
+}
+
+
+input[type=text]{ 
+  padding:5px; 
+  font-size:22px; 
+  border-radius:5px; 
+  box-shadow: 0px 0px 5px 0px rgba(42,42,42,.51);  
+  border:0;
+}
+#expiring_month, #expiring_year, #cvv{
+  width:40px;
+}
+.linha{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-between;
+  align-items:center;
+}
+.expiring{
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+}
+.expiring_in{
+  display:flex;
+  flex-direction:row;
+  justify-content:space-around;
+}
+label{
+  padding: 15px 0px;
+  font-size:25px;
+}
+p{
+  font-size:25px;
+}

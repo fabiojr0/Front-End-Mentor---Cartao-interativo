@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Validações de Cartão</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link rel="icon" href="./credit-card.png" type="image/png">
+</head>
+
+<body>
+  <div class="container">
+    <div class="left">
+      <div class="card front">
+        <div class="logo_card">
+        </div>
+        <div class="name_card">
+          FABIO C B JUNIOR
+        </div>
+        <div class="expiring_card">
+          12/12
+        </div>
+        <div class="numbers_card">
+          1234 1234 1234 1234
+        </div>
+      </div>
+      <div class="card back">
+        <div class="sensor">
+        </div>
+        <div class="validationcode_card">
+          123
+        </div>
+        <div class="text">
+          ------ ---- ------ ----- 
+          --- ------ ----- --- -- 
+          ---- -- ------- ---
+          ------ ---- ------ ----- 
+          --- ------ ----- --- -- 
+          ---- -- ------- ---
+          ------ ---- ------ ----- 
+          --- ------ ----- --- -- 
+          ---- -- ------- ---
+        </div>
+        
+      </div>
+    </div>
+    <div class="right">
+      <form class="forms">
+        <label for="name">Nome do proprietário:
+          <input type="text" id="name" placeholder="JOAO DA C SILVA">
+        </label>
+        <label for="numbers">Número do cartão:
+          <input type="text" id="numbers" placeholder="0000 0000 0000 0000" maxlength="16">
+        </label>
+        <div class="linha">
+        <div class="expiring">
+        <p>Data de Validade:</p>
+          <div class="expiring_in">
+        
+          <input type="text" id="expiring_month" placeholder="03" maxlength="2">
+        
+        
+          <input type="text" id="expiring_year" placeholder="29" maxlength="2">
+        
+          </div>
+          </div>
+        <label for="cvv">CVV:
+          <input type="text" id="cvv" placeholder="987" maxlength="3">
+        </label>
+    </div>
+        <input type="button" value="Confirmar" class="buttonConfirm">
+        
+      </form>
+    </div>
+  </div>
+
+
+  
+  <script src="script.js"></script>
+</body>
+
+</html>
